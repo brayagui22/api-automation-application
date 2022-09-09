@@ -1,0 +1,20 @@
+{
+  "name" : "BackendAutomationCampaign",
+  "type" : "REFERRAL",
+  "startDate" : "2022-01-01 10:15:30",
+  "endDate" : "2023-12-09 10:15:30",
+  "suspended" : false,
+  "countryCode" : "US",
+  "currency" : "USD",
+  "campaignDetails" : {
+    "campaignDetails" : "referral",
+    "rewardThreshold" : 1000,
+    "refereeRewardCondition" : "TRANSACTION_COMPLETED",
+    "referrerRewardCondition" : "THRESHOLD_REACHED",
+    "refereeRewardFiatAmount" : 42,
+    "referrerRewardFiatAmount" : 42,
+    "codeExpirationOnReward" : true,
+    "rewardOnMinimumPurchase" : true,
+    "purchaseFiatAmount" : 100
+  }
+}

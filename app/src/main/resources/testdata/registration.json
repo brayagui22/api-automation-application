@@ -1,0 +1,28 @@
+{
+  "flowId": "2",
+  "registrationId": "HNZsKh8viHigLic0zoc6Jl39oAfog4Y6A6zdr97816SdiCLvhJ4wA5U3SrM2jjo8",
+  "type": "Registration",
+  "registrationData": {
+    "email": {
+      "dataType": "email",
+      "name": "email",
+      "labelKey": "email",
+      "value": "brayaguiqa+testapi@gmail.com",
+      "type": "Data"
+    },
+    "country": {
+      "dataType": "country",
+      "name": "country",
+      "labelKey": "country",
+      "value": "US",
+      "type": "Data"
+    },
+    "state": {
+      "dataType": "state",
+      "name": "state",
+      "labelKey": "state",
+      "value": 6,
+      "type": "Data"
+    }
+  }
+}

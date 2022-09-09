@@ -1,0 +1,28 @@
+{
+  "name": "BackendAutomationBanner",
+  "link": "gcoin://buy/100",
+  "position": 2,
+  "functionalType": "REGULAR",
+  "startDate": "2022-04-30 00:00:00",
+  "endDate": "2022-12-29 23:59:59",
+  "countryCode": "US",
+  "location": 1,
+  "suspended": false,
+  "locations": [
+    {
+      "location": "https://rg-campaign-media.s3.us-west-2.amazonaws.com/refBanner-min.png",
+      "width": 286,
+      "height": 80
+    },
+    {
+      "location": "https://rg-campaign-media.s3.us-west-2.amazonaws.com/refBanner%403x-min.png",
+      "width": 858,
+      "height": 240
+    },
+    {
+      "location": "https://rg-campaign-media.s3.us-west-2.amazonaws.com/refBanner%402x-min.png",
+      "width": 572,
+      "height": 160
+    }
+  ]
+}

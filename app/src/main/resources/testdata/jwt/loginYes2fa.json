@@ -1,0 +1,8 @@
+{
+  "credential": "gcoindev+123456@gmail.com",
+  "mfa_token": null,
+  "channel": "APP",
+  "mfa_channel": "PHONE",
+  "device_fingerprint": "1f89ca14-d4be-4125-8eab-ff85e5be59d4",
+  "secret" : "42a398b5cae707cda874db36c62b22351649cdb26fea1cc8335cc992d4183222"
+}
