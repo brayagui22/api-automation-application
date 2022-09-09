@@ -16,14 +16,12 @@ public class JwtService extends BaseTest {
 
     public String token;
 
-    @BeforeMethod
     public void setup(){
         setupProps();
         util.RestAssuredUtil.setBaseURI(prop.getProperty("jwt_url"));
         util.RestAssuredUtil.setBasePath("");
     }
 
-    @Test(priority = 1)
     public void PostLogin() throws IOException {
         System.out.println("PostLogin");
         String jsonBody = testUtil.generateStringFromResource("./src/main/resources/testdata/jwt/loginNo2fa.json");
@@ -36,7 +34,6 @@ public class JwtService extends BaseTest {
         System.out.println(response.getBody().asString());
     }
 
-    @Test(priority = 2)
     public void RefreshToken(){
         System.out.println("RefreshToken");
         JSONObject jsonbody = new JSONObject();
@@ -54,7 +51,6 @@ public class JwtService extends BaseTest {
         System.out.println(response.getBody().asString());
     }
 
-    @Test(priority = 3)
     public void PostLogout(){
         Response response = given()
                 .header("authorization", "JWT "+token)
@@ -66,7 +62,6 @@ public class JwtService extends BaseTest {
         System.out.println(response.getBody().asString());
     }
 
-    @Test
     public void PostLoginIncorrectCredentials() throws IOException {
         String jsonBody = testUtil.generateStringFromResource("./src/main/resources/testdata/jwt/incorrectlogin.json");
         RequestSpecification request = given();
@@ -77,7 +72,6 @@ public class JwtService extends BaseTest {
         System.out.println(response.getBody().asString());
     }
 
-    @Test(priority = 4)
     public void PostLoginYes2fa() throws IOException{
         System.out.println("PostLoginYes2fa");
         String jsonBody = testUtil.generateStringFromResource("./src/main/resources/testdata/jwt/loginYes2fa.json");
@@ -91,7 +85,6 @@ public class JwtService extends BaseTest {
     }
 
 
-    @Test(priority = 5)
     public void PostLoginWith2fa() throws Exception {
         System.out.println("PostLoginWith2fa");
         JSONObject jsonBody = util.Utils.parseJSONFile("./src/main/resources/testdata/jwt/loginYes2fa.json");
@@ -116,7 +109,6 @@ public class JwtService extends BaseTest {
         PostLoginIncorrectCredentials();
         PostLoginYes2fa();
         PostLoginWith2fa();
-
     }
 }
 
